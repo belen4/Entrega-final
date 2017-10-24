@@ -1,0 +1,127 @@
+#div{
+width: 80%;
+        margin: 0% auto;
+        background-color:#D6E4F0;
+    }
+    #ico{
+        height: 20px;
+        width: 20px;
+    }
+    header{
+        height: 20%;
+   
+    }
+    body{
+        background-image: url("img/fondo1.jpg");
+    }
+    .linav, .listadoh{
+        display: inline;
+        padding-left: 5px;
+
+    }
+    ul,li{
+list-style:none;
+    }
+    a:link   
+{   
+ text-decoration:none;   
+}  
+    nav{
+        background-color: #DFF4F3;
+        clear:right; 
+    }
+    .busqueda {
+  float: right;
+  padding-right: 5px;
+  padding-left: 2px;
+    }
+    .nosotros{
+
+        height: 20%;
+    }
+    div{
+        height: 50%;
+        background-color: green;
+    }
+    
+    #carrito{
+        height: 30px;
+        width: 30px;
+    }
+div{
+     height: 30%;
+background-color: mediumaquamarine;
+
+}
+#criticas{
+width: 40%;
+
+}
+aside{
+    width:30%;
+    margin-left:70%;
+   height: 30%;
+   margin-top: -10%;
+}
+p, h2, li, a{
+    color:black;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+h1{
+    font-family: 'Fascinate Inline', cursive;
+}
+@media	only	screen	and	(max-width:	1050px) and (min-width: 860px){
+    #div{
+      
+        width: 100%;
+    }
+
+}	
+@media	only	screen	and	(max-width:	860px)  and (min-width:650px){
+    article > li > a > img {
+width: 300px;
+height: 200px;
+    }
+    #div{
+width: 100%
+}
+}
+@media	only	screen	and	(max-width:	649px) and (min-width: 400px){
+    article > li > a > img {
+width: 100%;
+    }
+    #div{
+
+width: 100%
+
+}
+aside{
+    margin:0px;
+}
+.nosotros{
+    height: 40%
+}
+}
+@media	only	screen	and	(max-width:	409px){
+   article > li > a > img {
+width: 100%;
+    }
+    #div{
+       
+width: 100%
+
+}
+aside{
+    margin:0px;
+}
+.nosotros{
+    height: 40%
+}
+input{
+    display:none;
+}
+li{
+    display: block;
+}
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Formulario</title>
+<meta charset="UTF-8">
+    <meta name="description" content="registro">
+    <meta name="author" content="Anonimo">
+    <meta property="og:image" content="img/icono.ico">
+    <meta property="og:title" content="Una pagina">
+<link rel="stylesheet" href="css/css1.css" type="text/css">
+<script type="text/javascript" src="js/jsf1.js"></script>
+
+</head>
+<body>
+    <form action="" name="formulario" method="get" onsubmit="return validar();">
+<h2>REGISTRO</h2>
+<input type="email" id="correo"  placeholder="Correo" required>
+<input type="text"  pattern="[A-Za-z]" name="nombre"  placeholder="Nombre" maxlength="30">
+<input type="text" name="apellido" pattern="[A-Za-z]"  placeholder="Apellido" maxlength="30">
+<input type="password" id="c1"   placeholder="Contrasena" minlength="8" required>
+<input type="password"  id="c2" placeholder="Reingreso de contrasena"  minlength="8" required>
+<br>
+ Sex <input  class="s"type="radio" value="1" name="1"> Fem
+     <input class="s" type="radio" value="0" name="1"> Mas
+         <br>
+Quiere subscribirse? <input  class="s"type="radio"  name="2" value="true"> Si
+     <input class="s" type="radio" value="false" name="2"> No
+         <br>
+<input type="submit" id="button" id="btn" value="Enviar">
+</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    background-image: url("img/fondo3.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 20px;
+    background-color: green;
+}
+form{
+    margin-top: 90px;
+    width: 400px;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: rgba(360, 360, 360, 0.6);
+  margin-top: 90px;
+}
+h2{
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 20px;
+   color: #26a69a;
+
+}
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+      border: none ;
+   
+}
+#button{
+cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #26a69a;
+    border: none;
+    border-radius: 15px;;
+    padding: 20px;
+}
+#button:hover{
+ animation: bounce 1s;
+ 
+
+}
+@media	only	screen	and	(max-width: 840px) and (min-width: 440px){
+    body{
+        background-repeat: repeat-y;
+    }
+}
+@media	only	screen	and	(max-width: 440px){
+    form{
+        /*margin: auto;*/
+    }
+    body{
+        background-repeat: repeat-y;
+    }
+    input{
+        width: 75%;
+    }
+
+}	

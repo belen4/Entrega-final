@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="una pequeña pagina">
+    <meta name="author" content="Alguien">
+    <meta property="og:image" content="img/faticon.ico">
+    <meta property="og:title" content="Una pagina"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title> Index</title>
+	<link rel="stylesheet" href="css/css.css"  type="text/css" />
+</head>
+<body name="body" class="body">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <div class="container-fluid div">
+      <header class="navbar navbar-inverse" id="home">
+        <h1 class="navbar-brand"> 
+           <img class="navbar-brand" id="ico" src="img/icomario.gif" alt="icono" >Bienvenido a <abbr title="World Health Organization"> WHO </abbr>
+        </h1>  
+        <ul class="nav navbar-inverse navbar-nav navbar-right">
+             <li><a href="entrar.html"> <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+             <li><a href="formulario1.html"  > <span class="glyphicon glyphicon-log-in"></span>Log in</a></li>
+        </ul>
+       </header>
+       <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto"> 
+             <li  class="nav-item"> <a class="navbar-brand" href="#home"> Home</a></li>
+             <li  class="nav-item"> <a class="nav-link" href="#nosotros"> Sobre</a></li>
+             <li class="nav-item"> <a class="nav-link"  href="#Comprar">Comprar</a></li>
+             <li class="nav-item"><a class="nav-link" href="#productos" >Productos </a>
+             <li class="nav-item"> <a class="nav-link" href="#Contacto">  Contacto  </a> </li>
+             <li class="nav-item"> <a  class="nav-link" href="carrito.html"><img id="carrito" src="img/carrito.png" alt="carrito"> </a> </li> 
+            <from action=“/accion.php” method =“post” class="form-inline">
+             <input  type="search"  class="form-control" placeholder="Busque aqui" class="nav-item" >
+             <input  class="btn btn-success"  type="submit"  class="nav-item"> 
+           </from>
+        </ul>
+      </div> 
+    </nav>
+    <hr>
+    <div id="juegos" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators" id="nosotros">
+    <li data-target="#juegos" data-slide-to="0" class="active"></li>
+    <li data-target="#juegos" data-slide-to="1"></li>
+    <li data-target="#juegos" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/juego1.jpg" alt="Juego1" class="banner">
+      <div class="carousel-caption">
+        <h3>Juego1</h3>
+        <p>Es genial!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="img/juego2.jpg" alt="Juego2" class="banner" >
+      <div class="carousel-caption">
+        <h3>Juego dos</h3>
+        <p>Mira esto!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="img/juego3.jpg" alt="Juego3" class="banner" >
+      <div class="carousel-caption">
+        <h3>Juego tres</h3>
+        <p>Juegalo ahora</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#juegos" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#juegos" data-slide="next">
+    <span class="carousel-control-next-icon" ></span>
+  </a>
+    </div>
+  
+
+ 
+<main class="container div" >
+  <hr>
+  <article >
+  <h1>¿Quienes somos? </h1>
+<p> Lorem ipsum dolor sit amet, amet lacus morbi orci quis tellus ut, nullam hac,
+    posuere a ante sed hendrerit. Morbi nec dolor pede porttitor suspendisse. At dolor.
+    Scelerisque netus ipsum leo aliquam. Lorem per est nisl per sagittis blandit, aliquet sit. 
+    Congue neque lobortis ut, lorem felis fusce dictumst habitasse, amet quis felis odio quisque 
+    vel vitae, amet velit integer eleifend.</p>
+    <h2>Proveedores de contenidos </h2>
+    <p> Además de trabajar en el desarrollo de nuestro sitio, actuamos como proveedores de contenidos
+       biográficos para diversos portales. Contacte con nosotros si necesita biografías o información 
+       biográfica o bibliográfica para su sitio y desea publicar contenidos exclusivos.También escrib
+       imos su biografía o la de su ser querido. Tal es el objeto del servicio "Tu vida en un libro",
+       que intenta atender a aquellas personas que quisieran ver publicado en forma de libro el relato
+       de su vida o de la vida de algún familiar. Encontrará amplia información sobre el proceso de re
+       dacción y edición en las páginas correspondientes. </p>
+         </article> 
+        <hr  id="#productos">
+        <section id="juegos" class="row"></section>
+       <br>
+<table class="table table-hover col-6">
+  <thead class="col-3">
+    <tr>
+      <th>#</th>
+      <th>Game</th>
+      <th>Score</th>
+      <th>Downloads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Distinity </td>
+      <td> 1.345</td>
+      <td>2.374.890</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Deux Ex</td>
+      <td>984</td>
+      <td>1.523.453</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry the Bird</td>
+      <td>469</td>
+      <td>1.023.580</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<div class="row div"> <article class="col-9">
+  <h1 class="col-md-10 col-12 col-lg-8"> Call of duty</h1>
+  <img src="img/articuloj.gif" alt="juego Call  of  Dutty" id="gifarticulo" class="col-md-10 col-12 col-lg-8">
+  <p class="col-md-10 col-12 col-lg-8"> orem ipsum dolor sit amet, amet lacus morbi orci quis tellus ut, nullam hac,
+    posuere a ante sed hendrerit. Morbi nec dolor pede porttitor suspendisse. At dolor.
+    Scelerisque netus ipsum leo aliquam. Lorem per est nisl per sagittis blandit, aliquet sit. 
+    Congue neque lobortis ut, lorem felis fusce dictumst habitasse, amet quis felis odio quisque 
+    vel vitae, amet velit integer eleifend 
+</p></article> <br>
+<aside class="col-md-10 col-lg-3 col-12"> 
+    <li class="lij"> <img src="img/j1.jpg" alt="juego1"> <a href="j5"> Fifa 18  </a> <small>Plataformas </small></li>
+    <li class="lij"> <img src="img/j2.jpg" alt="juego2"> <a href="j6"> Distinity  </a> <small>Window </small></li>
+    <li class="lij"> <img src="img/j3.jpg" alt="juego3">  <a href="j7"> Deux Ex </a>  <small>Plataformas </small></li>
+    <li class="lij"><img src="img/j4.jpg" alt="juego4">   <a href="j8">  Galaga </a> <small>XO - Linux </small> </li>
+    <li class="lij"><img src="img/j1.jpg" alt="juego1">  <a href="j7"> Deux Ex </a> <small>Plataformas </small> </li>
+    <li class="lij"> <img src="img/j2.jpg" alt="juego2"> <a href="j8">  Galaga </a> <small>Aventura</small></li>
+      <br>
+     </aside>
+</div>
+     </main>
+     <footer id="Contacto">
+   <p> Por mas informacion</p>
+       <p> Phone: +12178218</p>
+       <p> Email: mail@mail.com</p>
+ 
+   </footer>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="js/carga_datos.js"></script>
+    <script> CargarCategorias();
+ </script>
+    </div>
+    </div>
+</body>
+</html>

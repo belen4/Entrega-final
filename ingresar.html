@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>Formulario</title>
-<meta charset="UTF-8">
-    <meta name="description" content="registro">
-    <meta name="author" content="Anonimo">
+    <meta charset="UTF-8">
+    <meta name="description" content="una pequeña pagina">
+    <meta name="author" content="Alguien">
     <meta property="og:title" content="Una pagina"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <title> Pagina</title>
-<link rel="stylesheet" href="css/css.css"  type="text/css"/>
+    <title>Ingresar</title>
+  	<link rel="stylesheet" href="css/css.css"  type="text/css" />
 </head>
 <body>
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <div class="container-fluid div">
-      <header class="navbar navbar-inverse" id="home">
+     <header class="navbar navbar-inverse" id="home">
         <h1 class="navbar-brand"> 
            <img class="navbar-brand" id="ico" src="img/icomario.gif" alt="icono" >Bienvenido a <abbr title="World Health Organization"> WHO </abbr>
         </h1>  
         <ul class="nav navbar-inverse navbar-nav navbar-right">
-             <li><a href="ingresar.html"> <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-             <li><a href="formulario1.html"  > <span class="glyphicon glyphicon-log-in"></span>Log in</a></li>
+             <li id="list"><a href="ingresar.html"  id="ingresar">  Sign Up</a></li>
+             <li id="list1"><a href="formulario1.html"  id="registrar"  > Log in</a></li>
         </ul>
-       </header>
-       <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
+     </header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,48 +42,27 @@
              <input  class="btn btn-success"  type="submit"  class="nav-item"> 
            </from>
         </ul>
-      </div> 
-    </nav>
-    <form action="" name="formulario" method="get">
-<main class="container">
-<h2>REGISTRO</h2> 
- <div class="form-group">
-   <label >Email <span>*</span></label>
-  <input type="email" class="form-control" id="correo"  placeholder="Correo" required >
-</div>
- <div class="form-group">
-  <label>Nombre </label>
-  <input type="text" class="form-control" pattern="[A-Za-z]" id="nombre" name="nombre" placeholder="Nombre" maxlength="50">
- </div>
- <div class="form-group">
-   <label>Apellido </label>
-   <input type="text" class="form-control" name="apellido" id="apellido" pattern="[A-Za-z]"  placeholder="Apellido" maxlength="50">
- </div>
-<div class="form-group">
-  <label>Password <span>*</span> </label>
-  <input type="password" class="form-control" id="c1" pattern="[A-Za-z0-9]+"  placeholder="Contrasena" minlength="8" required> 
-</div>
- <div class="form-group">
-    <label> Repet <span>*</span> </label>
-    <input type="password"  class="form-control" id="c2" pattern="[A-Za-z0-9]+" placeholder="Reingreso de contrasena"  minlength="8" required>
-</div>
- <div class="form-group">
-<label> Sex</label>
- <br><input  class="s" type="radio" value="1" name="1"> Fem
-     <input class="s" type="radio" value="0" name="1"> Mas
- </div>   
+       </div>
+     </nav>
+           
+    <div class="container">
+  <form name="formulario" method="get">
+    <br>
+    <h2>INGRESAR</h2>
+     <form role="form">
   <div class="form-group">
-Quiere subscribirse? <input  class="s"type="radio"  name="2" value="true" checked> Si
-     <input class="s" type="radio" value="false" name="2"> No
+    <label for="ejemplo_email_1">Email</label>
+    <input type="email"  id="correo1" class="form-control" placeholder="Introduce tu email" required>
   </div>
-      <div class="form-group" id="alerta"> 
-<input type="submit"  id="bton" class="btn btn-success" value="Enviar" onclick="validar">
-<hr>
+  <div class="form-group">
+    <label for="ejemplo_password_1">Contraseña</label>
+    <input type="password" class="form-control" id="password1" minlength="8" pattern="[a-zA-Z0-9]+" placeholder="Contraseña" required>
+  </div>
+     <div class="form-group" id="alerta1">
+        <input type="submit" id="botn" value="Entrar" onclick="clic()">
       </div>
-</form>
-</main>
-
-<script type="text/javascript" src="js/jsf1.js"></script>
-
+  </form>
+     <script type="text/javascript" src="js/jsf2.js"></script>
+    </div>
 </body>
 </html>
